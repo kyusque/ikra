@@ -176,7 +176,8 @@ set -u
 MAXSIZE=20G
 SRA_ROOT=$HOME/ncbi/public/sra
 
-SCRIPT_DIR=$(cd $(dirname $0); pwd)
+#SCRIPT_DIR=$(cd $(dirname $0); pwd)
+SCRIPT_DIR=$(dirname $0)
 
 if [[ $REF_SPECIES = mouse ]]; then
   BASE_REF_TRANSCRIPT=ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M21
